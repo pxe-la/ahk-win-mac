@@ -5,7 +5,7 @@
 isAltTab := false
 isCtrlTab := false
 
-LCtrl:: {
+*LCtrl:: {
     SetKeyDelay -1
 
     isAltPressed := GetKeyState('LAlt', 'P')
@@ -17,7 +17,7 @@ LCtrl:: {
     }
 }
 
-LCtrl up:: {
+*LCtrl up:: {
     global isCtrlTab
 
     SetKeyDelay -1
@@ -29,7 +29,7 @@ LCtrl up:: {
     }
 }
 
-LAlt:: {
+*LAlt:: {
     SetKeyDelay -1
 
     isCtrlPressed := GetKeyState('LCtrl', 'P')
@@ -40,7 +40,7 @@ LAlt:: {
     }
 }
 
-LAlt up:: {
+*LAlt up:: {
     global isAltTab
 
     SetKeyDelay -1
