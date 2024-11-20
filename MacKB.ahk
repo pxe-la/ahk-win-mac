@@ -62,20 +62,24 @@ isCtrlTab := false
     if (isAltPressed) {
         if (isAltTab = 0) {
             isAltTab := 1
-            Send '{Blind}{LCtrl up}{LAlt down}{Tab}'
+            Send '{Blind}{LCtrl up}{LAlt down}{Tab down}'
         } else {
-            Send '{Blind}{Tab}'
+            Send '{Blind}{Tab down}'
         }
     } else if (isCtrlPressed) {
         if (isCtrlTab = 0) {
             isCtrlTab := 1
             Send '{Blind}{LAlt up}{LCtrl down}{Tab}'
         } else {
-            Send '{Blind}^{Tab}'
+            Send '{Blind}^{Tab down}'
         }
     } else {
-        Send '{Blind}{Tab}'
+        Send '{Blind}{Tab down}'
     }
+}
+
+*Tab up:: {
+    Send '{Blind}{Tab up}'
 }
 
 ; In the following commands ctrl and alt already swapped
@@ -119,5 +123,5 @@ $^q::!F4
 $^!q:: DllCall("LockWorkStation")
 
 ; Alt_Shift_4: Make screenshot
-+^4::+#s
-+^!4:: Send '{LCtrl up}{LAlt up}+#s'
+$+^4::+#s
+$+^!4:: Send '{LCtrl up}{LAlt up}+#s'
