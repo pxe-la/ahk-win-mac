@@ -1,4 +1,4 @@
-﻿; For this script Ctrl and Alt should be swapped using registry
+; For this script Ctrl and Alt should be swapped using registry
 ; In comments named Mac Buttons
 #Requires AutoHotkey v2.0
 #SingleInstance
@@ -73,7 +73,7 @@ isPCtrTab := false ; is Phisical Ctrl tab
     }
 }
 
-*Tab:: {
+*SC113:: {
     global isPAltTab
     global isPCtrTab
 
@@ -99,6 +99,6 @@ isPCtrTab := false ; is Phisical Ctrl tab
     }
 }
 
-*Tab up:: {
+*SC113 up:: {
     Send '{Blind}{Tab up}'
 }

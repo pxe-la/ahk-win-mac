@@ -4,7 +4,11 @@ _[AutoHotkey](https://www.autohotkey.com/) config_
 
 ## Installation
 
-0. **Before using this script you need to swap LCtrl and LAlt in registry.** I recommend [sharp keys](https://github.com/randyrants/sharpkeys)
+0. **Before using this script you need to swap some keys in registry.** I recommend [sharp keys](https://github.com/randyrants/sharpkeys)
+   1. Remap LCtrl to LAlt
+   2. Remap LAlt to LCtrl
+   3. Remap Tab to E0*13 key
+      <br><i>I selected this key because it is not used in other programs. If you want, you can choose another unused key and fixup mapping in `*SC113::`and`\_SC113 up::` sections (use AHK key history to determine codes</i>
 1. Install [AutoHotkey](https://www.autohotkey.com/)
 2. Run the MacKB.ahk file
 3. Put the MacKB.ahk file or a shortcut to the file in your Autostart folder to run it automatically on startup.
